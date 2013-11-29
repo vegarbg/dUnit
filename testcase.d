@@ -25,7 +25,7 @@ class TestCase(T)
         result.testStarted();
         this.setUp();
 
-        // Much black magic here. Thanks to BioTronic for the help!
+        // Much black magic here. Thanks to @Biotronic for the help!
         alias members = TypeTuple!(__traits(allMembers, T));
         foreach ( member; members )
         {
